@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Calendar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-settings-section></app-settings-section>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Day select</ion-label>
+      <ion-input type="text" [(ngModel)]="myDate" mbsc-datepicker [controls]="['calendar']"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Multiple day select</ion-label>
+      <ion-input type="text" [(ngModel)]="myDates" mbsc-datepicker [controls]="['calendar']" selectMultiple="true">
+      </ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

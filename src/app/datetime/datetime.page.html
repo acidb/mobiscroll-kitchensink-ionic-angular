@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Date & Time</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-settings-section></app-settings-section>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Compact date & time picker</ion-label>
+      <ion-input type="text" placeholder="Please select..." mbsc-datepicker [controls]="['datetime']"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Expanded date & time picker</ion-label>
+      <ion-input type="text" placeholder="Please select..." mbsc-datepicker [controls]="['date', 'time']"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Date</ion-label>
+      <ion-input type="text" placeholder="Please select..." mbsc-datepicker [controls]="['date']"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Time</ion-label>
+      <ion-input type="text" placeholder="Please select..." mbsc-datepicker [controls]="['time']"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

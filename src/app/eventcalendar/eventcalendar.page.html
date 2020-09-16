@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Eventcalendar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-settings-section></app-settings-section>
+  <mbsc-eventcalendar [data]="events" [options]="calendarSettings"></mbsc-eventcalendar>
+</ion-content>

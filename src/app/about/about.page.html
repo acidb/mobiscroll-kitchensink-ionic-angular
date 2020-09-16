@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>About</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-text>
+        <h2>Mobiscroll Version</h2>
+        <h3>5.0.0-beta3</h3>
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text>
+        <h2>Ionic Version</h2>
+        <h3>5.0.0</h3>
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text>
+        <h2>Build Date</h2>
+        <h3>{{buildDate | date}}</h3>
+      </ion-text>
+    </ion-item>
+    <ion-item>
+      <ion-text>
+        <h2>© {{buildDate.getFullYear()}} Acid Media LLC</h2>
+        <h3>
+          More info on the
+          <a href="#" onclick="window.open('https://mobiscroll.com/', '_system', 'location=yes')">Mobiscroll website</a>.
+        </h3>
+      </ion-text>
+    </ion-item>
+  </ion-list>
+</ion-content>

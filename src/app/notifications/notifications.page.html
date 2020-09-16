@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Notifications</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <app-settings-section></app-settings-section>
+    <div class="button-cont ion-padding">
+      <ion-button expand="full" (click)="showToast()">Toast</ion-button>
+    </div>
+</ion-content>

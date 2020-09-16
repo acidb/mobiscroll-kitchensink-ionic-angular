@@ -1,0 +1,16 @@
+<div class="settings-section">
+  <ion-item lines="none">
+    <ion-segment [(ngModel)]="theme" (ionChange)="updateOptions()">
+      <ion-segment-button *ngFor="let item of themes" [value]="item.value">
+        <ion-label>{{ item.text }}</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label position="stacked">Language</ion-label>
+    <ion-select [(ngModel)]="lang" (ionChange)="updateOptions()">
+      <ion-select-option *ngFor="let item of languages" [value]= "item.value" > {{ item.text }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+</div>
